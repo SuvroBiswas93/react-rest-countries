@@ -1,4 +1,5 @@
 import React, { use } from 'react';
+import Country from '../Country/Country';
 
 const Countries = ({promiseFetch}) => {
     const countriesData = use(promiseFetch)
@@ -9,6 +10,9 @@ const Countries = ({promiseFetch}) => {
     return (
         <div>
             <h1>Rest Countries:{countries.length} </h1>
+            {
+                Countries.map((country) =><Country country={country}></Country>)
+            }
         </div>
     );
 };
