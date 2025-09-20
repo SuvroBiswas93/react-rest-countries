@@ -3,3 +3,11 @@
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
 }
+.visted-flags-container img{
+    /* max-width: 100px; */
+    border: 1px solid blue;
+    padding: 10px;
+    background-color: rgb(122, 119, 119);
+    height: 80px;
+    margin-right: 20px;
+}
